@@ -19,7 +19,5 @@ CREATE USER recipe_box_app WITH PASSWORD 'SPuaQ3no';
 
 -- YOUR CODE HERE
 
-CREATE DATABASE recipe_box WITH OWNER recipe_box_app
-;
--- REVOKE connect FROM PUBLIC
--- ;
+CREATE DATABASE recipe_box WITH OWNER recipe_box_app;
+-- REVOKE connect FROM PUBLIC;

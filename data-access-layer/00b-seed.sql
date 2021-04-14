@@ -9,7 +9,7 @@
 
 -- YOUR CODE HERE
 
-
+SET ROLE recipe_box_app;
 
 
 
@@ -111,10 +111,6 @@ CREATE TABLE ingredients
    , food_stuff VARCHAR(500) NOT NULL
    , recipe_id INTEGER references recipes (id)
 );
-
-
-
-
 
 -- HERE BEGINS THE SEED DATA
 
