@@ -41,5 +41,18 @@
 --   «positional parameter»,
 -- )
 
+--   * Insert into the "instructions" table:
+--     * $1 is specification
+--     * $2 will contain the recipe id
+--
 
 -- YOUR CODE HERE
+INSERT INTO instructions (specification, list_order, recipe_id)
+VALUES (
+    $1
+   , (SELECT MAX(COALESCE(list_order, 1)+1) AS list_order
+      FROM instructions
+      WHERE specification = $1 AND recipe_id = $2
+     )
+   , $2
+   );
