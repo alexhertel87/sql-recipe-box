@@ -1,7 +1,7 @@
 {
   "name": "app-academy-recipe-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this project, you will build the Data Access Layer to power a Web application. This means that you will provide all of the SQL that it takes to get data into and from the database. You will do this in SQL files that the application will load and read.",
   "main": "server/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -9,8 +9,10 @@
     "express": "^4.17.1",
     "helmet": "^3.22.0",
     "moment": "^2.24.0",
-    "pg": "^7.18.2",
-    "pug": "^2.0.4"
+    "pg": "^8.6.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.22.4",
+    "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
     "mocha": "^7.1.1",
@@ -24,5 +26,13 @@
   },
   "keywords": [],
   "author": "App Academy Academics <academics@appacademy.io>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexhertel87/sql-recipe-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexhertel87/sql-recipe-box/issues"
+  },
+  "homepage": "https://github.com/alexhertel87/sql-recipe-box#readme"
 }
